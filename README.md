@@ -18,9 +18,6 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 - In your file browser menu bar go to:
   "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
 - Double click "start.sh" and select "Run in Terminal"
-- If you are using the GNOME terminal, try the GPG-HEP profile with the command:
-  "./scripts/install-profile.sh". 
-  The GNOME profile is optional but offers a nice aesthetic and color coding
 
 # QUICK GUIDE:
 ### 1. Start the launcher with gpg-hep.sh
