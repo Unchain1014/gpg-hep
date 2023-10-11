@@ -13,7 +13,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 
 # INSTALLATION
 - Clone this repository with the following command:
-  > cd $HOME ; git clone https://github.com/Unchain6787/gpg-hep.git
+  > cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
 - Press "Ctrl + H" to show hidden files (be sure to toggle this off when finished)
 - Make the gpg-hep folder hidden by renaming it with a period prefix:
   > "gpg-hep" becomes ".gpg-hep"
