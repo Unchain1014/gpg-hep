@@ -28,7 +28,6 @@ Nothing in this project does anything you can not do on your own. The goal of GP
     ```
     cd ~/gpg-hep ; ./gpg-hep.sh
     ```
-
 ### 2. Install prerequisite packages
   - GPG-HEP has four package dependencies; GPG, EXIFTOOL, PULSEAUDIO, LOLCAT
   - These can be installed manually, or you can type "p" in the launcher to run the automated installer
