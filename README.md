@@ -13,7 +13,9 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 
 # INSTALLATION
 - Clone this repository with the following command:
-  > cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
+  ```
+  cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
+  ```
 - In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
   > This step will vary depening on your Linux distribution and file manager
 - Double click "gpg-hep.sh" and select "Run in Terminal"
@@ -23,7 +25,9 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
   - This is the recommended method of launching scripts (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
+    ```
     > cd ~/gpg-hep ; ./gpg-hep.sh
+    ```
 
 ### 2. Install prerequisite packages
   - GPG-HEP has four package dependencies; GPG, EXIFTOOL, PULSEAUDIO, LOLCAT
