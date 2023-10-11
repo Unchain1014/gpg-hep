@@ -26,7 +26,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - This is the recommended method of launching scripts (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
     ```
-    > cd ~/gpg-hep ; ./gpg-hep.sh
+    cd ~/gpg-hep ; ./gpg-hep.sh
     ```
 
 ### 2. Install prerequisite packages
