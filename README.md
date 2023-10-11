@@ -14,6 +14,8 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 # INSTALLATION
 - Clone this repository with the following command:
   > cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
+- In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask every time"
+  > This step will vary depening on your Linux distribution and file manager
 - Double click "gpg-hep.sh" and select "Run in Terminal"
 
 # QUICK GUIDE:
