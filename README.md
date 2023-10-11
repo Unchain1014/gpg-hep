@@ -12,11 +12,13 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 - No personal or identifying data is stored in the files created or edited by these scripts
 
 # INSTALLATION
+- Clone this repository with the following command:
+  > cd $HOME ; git clone https://github.com/Unchain6787/gpg-hep.git
 - Press "Ctrl + H" to show hidden files (be sure to toggle this off when finished)
-- Make this folder hidden by renaming it with a period prefix: 
-  "gpg-hep" becomes ".gpg-hep"
+- Make the gpg-hep folder hidden by renaming it with a period prefix:
+  > "gpg-hep" becomes ".gpg-hep"
 - In your file browser menu bar go to:
-  "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
+  > "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
 - Double click "start.sh" and select "Run in Terminal"
 
 # QUICK GUIDE:
