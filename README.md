@@ -5,7 +5,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 
 - GPG tools for encrypting/decrypting with all GPG supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
 - Uses a shared master key file system for double symmetric encryption
-- Automated processes for encrypting and decrpyting text and media (image/video files)
+- Automated processes for encrypting and decrypting text and media (image/video files)
 - Metadata stripping provided by EXIFTOOL and fully incorporated in media file workflows
 - Scripts "shred" (fill with random bytes) files before removing them to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
@@ -35,7 +35,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - This key file will be encrypted with a strong shared passphrase
   - You must coordinate this shared passphrase with the recipient in some way, physical delivery is ideal
   - A key file contains 250 random characters which will be used to encrypt/decrypt your files
-  - The key file should always be transferred seperately from files
+  - The key file should always be transferred separately from files
   - You should never store the key with associated files unless processing them
 
 ### 4. Encrypt some text
