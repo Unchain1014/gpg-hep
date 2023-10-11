@@ -14,7 +14,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 # INSTALLATION
 - Clone this repository with the following command:
   > cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
-- In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask every time"
+- In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
   > This step will vary depening on your Linux distribution and file manager
 - Double click "gpg-hep.sh" and select "Run in Terminal"
 
@@ -28,17 +28,15 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 ### 2. Install prerequisite packages
   - GPG-HEP has four package dependencies; GPG, EXIFTOOL, PULSEAUDIO, LOLCAT
   - These can be installed manually, or you can type "p" in the launcher to run the automated installer
-    > PULSEAUDIO and LOLCAT are not required for full functionality as they are only providing sound and color.
-    > A future "light" version of GPG-HEP will be available without these dependencies.
+    > PULSEAUDIO and LOLCAT are not required for full functionality as they are only providing sound and color
+    > A future "light" version of GPG-HEP will be available without these dependencies
 
 ### 3. Create a key to share with the recipient of your files
-  - This process can be started by typing "k" in the launcher or running the following command:
+  - A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
+  - Start creating a key file by typing "k" in the launcher or running the following command:
     > cd ~/gpg-hep/scripts ; ./kgen.sh 
-  - This key file will be encrypted with a strong shared passphrase
-  - You must coordinate this shared passphrase with the recipient in some way, physical delivery is ideal
-  - A key file contains 250 random characters which will be used to encrypt/decrypt your files
-  - The key file should always be transferred separately from files
-  - You should never store the key with associated files unless processing them
+  - This key file should be encrypted with a strong shared passphrase
+  - You must coordinate this shared passphrase with the recipient
 
 ### 4. Encrypt some text
 
@@ -49,6 +47,11 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 ### 7. Decrypt a media file
 
 ### 8. Strip media file metadata
+
+# SECURITY TIPS
+  - When coordinating your shared key file passhprase with the recipient, physical communication is always best
+  - The key file should always be transferred separately from files
+  - You should never store the key with associated files unless processing them
 
 # FEEDBACK
 I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. You are free to fork this repository, provided that you do so under the GPL-3.0 license.
