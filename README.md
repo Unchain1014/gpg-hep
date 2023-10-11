@@ -1,5 +1,5 @@
 # ABOUT GPG-HEP
-Automated GPG encryption/decryption shell scripts that comes with a unified launcher.
+Automated GPG encryption/decryption shell scripts that come with a unified launcher.
 - GPG encryption tools with implementation of all GPG supported algorithms; 
   (IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256)
 - Uses a shared master key file system to utilize doulbe symmetric encryption
