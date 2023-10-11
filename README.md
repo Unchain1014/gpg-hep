@@ -39,4 +39,4 @@ This automated tool set and launcher was designed with the intention of bringing
   - You should never store the key with associated files unless processing them
 
 # FEEDBACK
-I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. You are free to fork this repository for your own creations, provided that you do so in the spirit of renewing personal autonomy in our world (and under the GPL-3.0 license).
+I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. My knowledge is currently limited to bash, but I would like to see this project converted to python some day. You are free to fork this repository for your own creations, provided that you do so in the spirit of renewing personal autonomy in our world (and under the GPL-3.0 license).
