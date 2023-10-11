@@ -1,7 +1,6 @@
 # ABOUT GPG-HEP
-Automated GPG encryption/decryption shell scripts that come with a unified launcher.
-- GPG encryption tools with implementation of all GPG supported algorithms; 
-  (IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256)
+Automated GPG encryption/decryption shell scripts that come with a unified launcher. Capable of processing both text and media (image/video files). Additionally includes an automated metadata stripping process with EXIFTOOL. This automated tool set and launcher was designed with the intention of bringing powerful privacy and security tools into the hands of the average person. Because of this choice, files and folders are named discreetly and the repository will remain as lightweight as possible. This is ideally deployable in volatile situations where privacy and security are necessary.
+- GPG tools for encrypting/decrypting with all GPG supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
 - Uses a shared master key file system to utilize doulbe symmetric encryption
 - Automated processes for encrypting and decrpyting text and media (image/video files)
 - Metadata stripping provided by EXIFTOOL and fully incorporated in media file workflows
@@ -21,13 +20,13 @@ Automated GPG encryption/decryption shell scripts that come with a unified launc
   The GNOME profile is optional but offers a nice aesthetic and color coding
 
 # QUICK GUIDE:
-## Start the launcher with gpg-hep.sh
+### 1. Start the launcher with gpg-hep.sh
   - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
   - This is the recommended method of launching scripts (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
     > cd $HOME/gpg-hep ; ./gpg-hep.sh
 
-## Create a key to share with the recipient of your files
+### 2. Create a key to share with the recipient of your files
   - This process can be started by typing "k" in the launcher or running the following command:
     > cd $HOME/gpg-hep/scripts ; ./kgen.sh 
   - This key file will be encrypted with a strong shared passphrase
