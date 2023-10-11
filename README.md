@@ -34,7 +34,9 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 ### 3. Create a key to share with the recipient of your files
   - A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
   - Start creating a key file by typing "k" in the launcher or running the following command:
-    > cd ~/gpg-hep/scripts ; ./kgen.sh 
+    ```
+    cd ~/gpg-hep/scripts ; ./kgen.sh
+    ```
   - This key file should be encrypted with a strong shared passphrase
   - You must coordinate this shared passphrase with the recipient
 
