@@ -21,17 +21,17 @@ Automated GPG encryption/decryption shell scripts that come with a unified launc
   The GNOME profile is optional but offers a nice aesthetic and color coding
 
 # QUICK GUIDE:
-1 - If you are not comfortable with terminal commands, double click the start.sh file and select "run in terminal"
+## Start the launcher with gpg-hep.sh
+  - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
   - This is the recommended method of launching scripts (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
     > cd $HOME/gpg-hep ; ./gpg-hep.sh
 
-2 - Create a key to share with the recipient of your files
+## Create a key to share with the recipient of your files
   - This process can be started by typing "k" in the launcher or running the following command:
     > cd $HOME/gpg-hep/scripts ; ./kgen.sh 
   - This key file will be encrypted with a strong shared passphrase
-  - You must coordinate this shared passphrase with the recipient in some way
-    Physical delivery of the passphrase is obviously ideal
-  - The key file contains 250 random characters which will be used to encrypt/decrypt your files
+  - You must coordinate this shared passphrase with the recipient in some way, physical delivery is ideal
+  - A key file contains 250 random characters which will be used to encrypt/decrypt your files
   - The key file should always be transfered seperately from files
-  - They key file should never be stored with associated files unless processing them
+  - You should never store the key with associated files unless processing them
