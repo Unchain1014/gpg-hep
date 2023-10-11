@@ -26,11 +26,11 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
   - This is the recommended method of launching scripts (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
-    > cd $HOME/gpg-hep ; ./gpg-hep.sh
+    > cd ~/gpg-hep ; ./gpg-hep.sh
 
 ### 2. Create a key to share with the recipient of your files
   - This process can be started by typing "k" in the launcher or running the following command:
-    > cd $HOME/gpg-hep/scripts ; ./kgen.sh 
+    > cd ~/gpg-hep/scripts ; ./kgen.sh 
   - This key file will be encrypted with a strong shared passphrase
   - You must coordinate this shared passphrase with the recipient in some way, physical delivery is ideal
   - A key file contains 250 random characters which will be used to encrypt/decrypt your files
