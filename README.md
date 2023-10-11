@@ -1,5 +1,5 @@
-# GPG-HEP
-Automated GPG encryption/decryption shell scripts. Comes with a launcher to bridge the gap between computer literacy and real privacy.
+# ABOUT GPG-HEP
+Automated GPG encryption/decryption shell scripts that comes with a unified launcher.
 - GPG encryption tools with implementation of all GPG supported algorithms; 
   (IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256)
 - Uses a shared master key file system to utilize doulbe symmetric encryption
@@ -23,10 +23,12 @@ Automated GPG encryption/decryption shell scripts. Comes with a launcher to brid
 # QUICK GUIDE:
 1 - If you are not comfortable with terminal commands, double click the start.sh file and select "run in terminal"
   - This is the recommended method of launching scripts (to ensure working directories are correct)
-  - Alternatively you can enter the command "./start.sh" to start the launcher
+  - Alternatively you can enter the following command to start the launcher:
+    > cd $HOME/gpg-hep ; ./gpg-hep.sh
 
 2 - Create a key to share with the recipient of your files
-  - This process can be started by typing "k" in the launcher
+  - This process can be started by typing "k" in the launcher or running the following command:
+    > cd $HOME/gpg-hep/scripts ; ./kgen.sh 
   - This key file will be encrypted with a strong shared passphrase
   - You must coordinate this shared passphrase with the recipient in some way
     Physical delivery of the passphrase is obviously ideal
