@@ -79,8 +79,8 @@ The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order 
     ```
 ### 8. Strip media file metadata
   - Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory
-  - Beging media decryption by typing "md" in the launcher and following the prompts
-  - Alternatively you can start text decryption with the following command:
+  - Beging media decryption by typing "sm" in the launcher and following the prompts
+  - Alternatively you can start metadata stripping with the following command:
     ```
     cd ~/gpg-hep/scripts ; ./strip.sh
     ```
