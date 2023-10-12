@@ -71,4 +71,4 @@ The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order 
   - You should never store the key with associated files unless processing them
 
 # FEEDBACK
-I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. You are free to fork this repository, provided that you do so under the GPL-3.0 license.
+I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. You are free to fork this repository, provided that you do so under the GPL-2.0 license.
