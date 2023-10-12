@@ -1,5 +1,6 @@
 # ABOUT GPG-HEP
 > This project is currently only available for Linux, but will be ported to Windows and MacOS in the near future.
+
 The goal of GPG-HEP is to bring something that resembles a GUI to already existing systems in order to create a streamlined workflow. GPG-HEP was created with the intention of bringing powerful privacy and security tools into the hands of the average person. This repository will remain as lightweight and portable as possible.
 - Uses a shared master key file system for double symmetric encryption
 - GPG tools for encrypting/decrypting with supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
