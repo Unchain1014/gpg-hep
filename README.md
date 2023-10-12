@@ -11,50 +11,42 @@ The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order 
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
 
 ## INSTALLATION
-- Clone this repository with the following command:
+### Clone this repository with the following command:
  ```
  cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
  ```
 ## QUICK GUIDE:
-You will be prompted to install prerequisite packages when starting the launcher
-> GPG-HEP has two package dependencies (GPG and EXIFTOOL)
 ### 1. Start the launcher with gpg-hep.sh
  - Enable text/script file execution in your file manager
    > This step will vary depening on your Linux distribution and file manager
  - Execute the gpg-hep.sh file in the cloned directory
-
+   > You will be prompted to install prerequisite packages when starting the launcher (GPG and EXIFTOOL)
 ### 2. Create a shared key file
- - A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
- - This key file should be encrypted with a strong shared passphrase
- - You must coordinate this shared passphrase with the recipient
- - Start creating a key file by typing "k" in the launcher
-
+ - Create a key file by typing "k" in the launcher
+ > A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
+ > This key file should be encrypted with a strong shared passphrase
+ > You must coordinate this shared passphrase with the recipient
 ### 3. Encrypt text
- - Before encrypting text you must have a .gpg key file in the "gpg-hep/files" directory
- - Be ready to enter the coordinated shared passphrase for the key file, which was established with the recipient
- - Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
  - Begin text encryption by typing "te" in the launcher and following the prompts
-
+ > Before encrypting text you must have a .gpg key file in the "gpg-hep/files" directory
+ > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
+ > Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
 ### 4. Decrypt text
- - Before decrypting be sure to have your .gpg message and .gpg key file in the "gpg-hep/files" directory
- - Be ready to enter the coordinated shared passphrase for the key file, which was established with the sender
- - Beging text decryption by typing "td" in the launcher and following the prompts
-
+ - Begin text decryption by typing "td" in the launcher and following the prompts
+ > Before decrypting be sure to have your .gpg message and .gpg key file in the "gpg-hep/files" directory
+ > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### 5. Encrypt a media file
- - Before encrypting media, be sure to have your files and a .gpg key in the "gpg-hep/files" directory
- - Be ready to enter the coordinated shared passphrase for the key file, which was established with the recipient
- - The media encryption script will ask if you want to strip metadata or not, this does not need to be done prior
- - Beging media encryption by typing "me" in the launcher and following the prompts
-
+ - Begin media encryption by typing "me" in the launcher and following the prompts
+ > Before encrypting media, be sure to have your files and a .gpg key in the "gpg-hep/files" directory
+ > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
+ > The media encryption script will ask if you want to strip metadata and do it for you
 ### 6. Decrypt a media file
- - Before decrypting media, be sure to have your .gpg files and a .gpg key in the "gpg-hep/files" directory
- - Be ready to enter the coordinated shared passphrase for the key file, which was established with the sender
- - Beging media decryption by typing "md" in the launcher and following the prompts
-
+ - Begin media decryption by typing "md" in the launcher and following the prompts
+ > Before decrypting media, be sure to have your .gpg files and a .gpg key in the "gpg-hep/files" directory
+ > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### 7. Strip media file metadata
- - Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory
- - Beging media decryption by typing "sm" in the launcher and following the prompts
-
+ - Strip metadata by typing "sm" in the launcher and following the prompts
+ > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory
 # SECURITY TIPS
  - When coordinating your shared key file passhprase with the recipient, physical communication is always best
  - The key file should always be transferred separately from files
