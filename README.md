@@ -47,10 +47,10 @@ cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
 ### Strip media file metadata
 - Strip metadata by typing "sm" in the launcher and following the prompts
    > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory
-# SECURITY TIPS
+## SECURITY TIPS
 - When coordinating your shared key file passhprase with the recipient, physical communication is always best
 - The key file should always be transferred separately from files
 - You should never store the key with associated files unless processing them
 
-# FEEDBACK
+## FEEDBACK
 I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page. You are free to fork this repository, provided that you do so under the GPL-2.0 license.
