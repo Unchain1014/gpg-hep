@@ -38,6 +38,7 @@ Begin media decryption by typing "md" in the launcher and following the prompts.
 ## Metadata Stripping
 Strip metadata by typing "sm" in the launcher and following the prompts.
    > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory.
+
 # SECURITY TIPS
 - When coordinating your shared key file passhprase with the recipient, physical communication is always best
 - The key file should always be transferred separately from files
