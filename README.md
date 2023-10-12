@@ -1,15 +1,12 @@
 # ABOUT GPG-HEP
 > This project is currently only available for Linux, but will be ported to Windows and MacOS in the near future.
-
 The goal of GPG-HEP is to bring something that resembles a GUI to already existing systems in order to create a streamlined workflow. GPG-HEP was created with the intention of bringing powerful privacy and security tools into the hands of the average person. This repository will remain as lightweight and portable as possible.
-
 - Uses a shared master key file system for double symmetric encryption
 - GPG tools for encrypting/decrypting with supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
 - Automated processes for encrypting and decrypting text and image/video files
 - Metadata stripping provided by EXIFTOOL and incorporated in media file workflows
 - Scripts "shred" files (fill with random bytes) before deleting, to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
-
 # LINUX INSTALLATION
 ### Clone this repository with the following command:
 ```
@@ -38,12 +35,10 @@ Begin media decryption by typing "md" in the launcher and following the prompts.
 ## Metadata Stripping
 Strip metadata by typing "sm" in the launcher and following the prompts.
    > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory.
-
 # SECURITY TIPS
 - When coordinating your shared key file passhprase with the recipient, physical communication is always best
 - The key file should always be transferred separately from files
 - You should never store the key with associated files unless processing them
-
 # FEEDBACK
 I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page: https://github.com/Unchain1014/gpg-hep/discussions.
 
