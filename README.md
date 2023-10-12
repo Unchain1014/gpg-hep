@@ -20,7 +20,7 @@ The goal of GPG-HEP was simply to bring a quasi-ui to already existing systems i
   - In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
     > This step will vary depening on your Linux distribution and file manager
   - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
-  - This is the recommended method of launching scripts (to ensure working directories are correct)
+  - This is the recommended method of launching (to ensure working directories are correct)
   - Alternatively you can enter the following command to start the launcher:
     ```
     cd ~/gpg-hep ; ./gpg-hep.sh

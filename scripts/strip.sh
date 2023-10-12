@@ -29,6 +29,7 @@ if [[ $strip = "y" ]] || [[ $strip = "Y" ]] ; then
     echo "Stripping metadata from target file..."
     exiftool -quiet -all= files/$target_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
     shred files/"${target_filename}_original"
+    echo -e "\e[32mStripped all shredded. \e[0m"
     rm -f files/"${target_filename}_original"
     echo -e "\e[32mStripped all metadata. \e[0m"
 else

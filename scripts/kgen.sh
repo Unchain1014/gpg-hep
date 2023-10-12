@@ -40,6 +40,7 @@ echo -e "\e[37mEnter shared password for your key file: \e[0m"
 gpg --batch --yes -c --cipher-algo $encryption --quiet --no-symkey-cache files/$key_filename || { shred files/$key_filename ; rm -f files/$key_filename ; paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-cancel.sh" ; exit 1 ; }
 echo -e "\e[32mEncrypted key file with shared password. \e[0m"
 shred files/$key_filename
+echo -e "\e[32mRaw key shredded. \e[0m"
 rm -f files/$key_filename
 echo -e "\e[32mRaw key deleted. \e[0m"
 echo

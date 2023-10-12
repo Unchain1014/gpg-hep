@@ -76,6 +76,7 @@ stty -echo
 if [[ $delete = "y" ]] || [[ $delete = "Y" ]]
 then
  shred files/$target_filename
+ echo -e "\e[32mOriginal file shredded. \e[0m"
  rm -f files/$target_filename
  echo -e "\e[32mOriginal file deleted. \e[0m"
  echo
