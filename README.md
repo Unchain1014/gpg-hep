@@ -18,12 +18,14 @@ The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order 
 ## QUICK GUIDE:
  - You will be prompted to install prerequisite packages when starting the launcher
    > GPG-HEP has four package dependencies; GPG, EXIFTOOL, PULSEAUDIO, LOLCAT
+
    > PULSEAUDIO and LOLCAT are not required for full functionality as they are only providing sound and color
+
    > A future "light" version of GPG-HEP will be available without these dependencies
 ### 1. Start the launcher with gpg-hep.sh
- - In your file manager go to "Edit > Preferences > Behavior > Executable Text Files" select "Ask each time"
+ - Enable text/script file execution in your file manager
    > This step will vary depening on your Linux distribution and file manager
- - Double click the gpg-hep.sh file in the cloned directory and select "Run in Terminal"
+ - Execute the gpg-hep.sh file in the cloned directory
  - This is the recommended method of launching (to ensure working directories are correct)
  - Alternatively you can enter the following command to start the launcher:
    ```
