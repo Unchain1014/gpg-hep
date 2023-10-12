@@ -43,6 +43,10 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - You must coordinate this shared passphrase with the recipient
 
 ### 4. Encrypt text
+  - Before encrypting text you must have a .gpg key file in the "files" directory
+  - Begin text encryption by typing "te" in the launcher
+  - Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
+  - 
 
 ### 5. Decrypt text
 

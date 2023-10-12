@@ -27,15 +27,15 @@ exit 0
 else
     if [[ $input = "vh" ]] || [[ $input = "VH" ]] || [[ $input = "vH" ]] || [[ $input = "Vh" ]] || [[ $input = "hv" ]] || [[ $input = "HV" ]] || [[ $input = "hV" ]] || [[ $input = "Hv" ]] || [[ $input = "H" ]] || [[ $input = "h" ]] ; then
     stty -echo
-    echo -e "\e[37mDisplaying readme file: \e[0m"
+    echo -e "\e[37mDisplaying help file: \e[0m"
     echo
-    cat readme
+    cat "misc/help"
     echo
-    echo -e "\e[1;37mEND OF README FILE \e[0m"
+    echo -e "\e[1;37mEND OF HELP FILE \e[0m"
     paplay misc/beep.ogg
     read -p 'Press enter to clear terminal...' finish
     clear
-    /bin/bash -c "./start.sh"
+    /bin/bash -c "./gpg-hep.sh"
     exit 0
     else
         if [[ $input = "f" ]] || [[ $input = "F" ]] ; then
@@ -45,7 +45,7 @@ else
         paplay misc/beep.ogg
         read -p 'Press enter to clear terminal...' finish
         clear
-        /bin/bash -c "./start.sh"
+        /bin/bash -c "./gpg-hep.sh"
         exit 0
         else
             if [[ $input = "sm" ]] || [[ $input = "SM" ]] || [[ $input = "sM" ]] || [[ $input = "Sm" ]] || [[ $input = "ms" ]] || [[ $input = "MS" ]] || [[ $input = "mS" ]] || [[ $input = "Ms" ]] ; then
@@ -113,5 +113,5 @@ if [[ $failed = "true" ]] ; then
     paplay misc/error.ogg
     read -p 'Press enter to restart...' finish
     clear
-    /bin/bash -c "./start.sh"
+    /bin/bash -c "./gpg-hep.sh"
 fi
