@@ -53,4 +53,6 @@ cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
 - You should never store the key with associated files unless processing them
 
 ## FEEDBACK
-I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page:https://github.com/Unchain1014/gpg-hep/discussions. You are free to fork this repository, provided that you do so under the GPL-2.0 license.
+I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page: https://github.com/Unchain1014/gpg-hep/discussions.
+
+You are free to fork this repository, provided that you do so under the GPL-2.0 license.
