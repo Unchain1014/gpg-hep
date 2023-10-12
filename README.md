@@ -24,25 +24,33 @@ The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order 
 ### 2. Create a shared key file
  - Create a key file by typing "k" in the launcher
  > A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
+
  > This key file should be encrypted with a strong shared passphrase
+
  > You must coordinate this shared passphrase with the recipient
 ### 3. Encrypt text
  - Begin text encryption by typing "te" in the launcher and following the prompts
  > Before encrypting text you must have a .gpg key file in the "gpg-hep/files" directory
+
  > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
+
  > Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
 ### 4. Decrypt text
  - Begin text decryption by typing "td" in the launcher and following the prompts
  > Before decrypting be sure to have your .gpg message and .gpg key file in the "gpg-hep/files" directory
+
  > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### 5. Encrypt a media file
  - Begin media encryption by typing "me" in the launcher and following the prompts
  > Before encrypting media, be sure to have your files and a .gpg key in the "gpg-hep/files" directory
+
  > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
+
  > The media encryption script will ask if you want to strip metadata and do it for you
 ### 6. Decrypt a media file
  - Begin media decryption by typing "md" in the launcher and following the prompts
  > Before decrypting media, be sure to have your .gpg files and a .gpg key in the "gpg-hep/files" directory
+
  > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### 7. Strip media file metadata
  - Strip metadata by typing "sm" in the launcher and following the prompts
