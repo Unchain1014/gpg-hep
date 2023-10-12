@@ -11,7 +11,7 @@ The goal of GPG-HEP is to bring something that resembles a GUI to already existi
 # LINUX INSTALLATION
 ### Clone this repository with the following command:
 ```
-cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
+cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; open ~/gpg-hep
 ```
 ## Launching
 1. Enable text/script file execution in your file manager.
