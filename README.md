@@ -10,41 +10,41 @@ The goal of GPG-HEP is to bring something that resembles a GUI to already existi
 - Scripts "shred" files (fill with random bytes) before deleting, to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
 
-## LINUX INSTALLATION
-### Clone this repository with the following command:
+# LINUX INSTALLATION
+## Clone this repository with the following command:
 ```
 cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
 ```
-## QUICK GUIDE:
-### Launching
+# QUICK GUIDE:
+## Launching
 1. Enable text/script file execution in your file manager.
    > This step will vary depening on your Linux distribution and file manager.
 2. Execute the gpg-hep.sh file in the cloned directory (double click in most file managers).
    > You will be prompted to install prerequisite packages when starting the launcher (GPG and EXIFTOOL).
-### Key Files
+## Key Files
 Create a key file by typing "k" in the launcher.
    > A key file contains 250 random characters used as the passphrase to encrypt/decrypt files. This key file will be encrypted with a strong shared passphrase. You must coordinate this shared passphrase with the recipient of your encrypted files.
-### Text Encryption
+## Text Encryption
 Begin text encryption by typing "te" in the launcher and following the prompts.
    > Before encrypting text you must have a .gpg key file in the "gpg-hep/files" directory. Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V".
-### Text Decryption
+## Text Decryption
 Begin text decryption by typing "td" in the launcher and following the prompts.
    > Before decrypting be sure to have your .gpg message and .gpg key file in the "gpg-hep/files" directory.
-### Media Encryption
+## Media Encryption
 Begin media encryption by typing "me" in the launcher and following the prompts.
    > Before encrypting media, be sure to have your files and a .gpg key in the "gpg-hep/files" directory. The media encryption script will ask if you want to strip metadata and do it for you.
-### Media Decryption
+## Media Decryption
 Begin media decryption by typing "md" in the launcher and following the prompts.
    > Before decrypting media, be sure to have your .gpg files and a .gpg key in the "gpg-hep/files" directory.
-### Metadata Stripping
+## Metadata Stripping
 Strip metadata by typing "sm" in the launcher and following the prompts.
    > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory.
-## SECURITY TIPS
+# SECURITY TIPS
 - When coordinating your shared key file passhprase with the recipient, physical communication is always best
 - The key file should always be transferred separately from files
 - You should never store the key with associated files unless processing them
 
-## FEEDBACK
+# FEEDBACK
 I am looking for help to extend the functionality of GPG-HEP and revise workflows. If you would like to become involved with this project or offer your revisions/suggestions, please contact me through the repository page: https://github.com/Unchain1014/gpg-hep/discussions.
 
 You are free to fork this repository, provided that you do so under the GPL-2.0 license.
