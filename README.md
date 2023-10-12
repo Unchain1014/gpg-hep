@@ -1,13 +1,13 @@
 # ABOUT GPG-HEP
-GPG encryption/decryption shell scripts that come with a unified terminal launcher. Capable of processing both text and media (image/video files). Additionally includes an automated metadata stripping process with EXIFTOOL. 
+Terminal based shell script launcher for GPG encrpytion/decryption of text and image/video files. Includes metadatastripping with EXIFTOOL.
 
-The goal of GPG-HEP is to bring a quasi-ui to already existing systems in order to create a streamlined workflow. GPG-HEP was designed with the intention of bringing powerful privacy and security tools into the hands of the average person. Because of this choice, files and folders are named discreetly and the repository will remain as lightweight as possible. This is ideally deployable in volatile situations where privacy and security are necessary.
+The goal of GPG-HEP is to bring something that resembles a GUI to already existing systems in order to create a streamlined workflow. GPG-HEP was created with the intention of bringing powerful privacy and security tools into the hands of the average person. Because of this choice, files and folders are named discreetly and the repository will remain as lightweight as possible. This is ideally deployable in volatile situations where privacy and security are necessary.
 
-- GPG tools for encrypting/decrypting with GPG supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
 - Uses a shared master key file system for double symmetric encryption
-- Automated processes for encrypting and decrypting text and media (image/video files)
+- GPG tools for encrypting/decrypting with supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
+- Automated processes for encrypting and decrypting text and image/video files
 - Metadata stripping provided by EXIFTOOL and incorporated in media file workflows
-- Scripts "shred" (fill with random bytes) files before removing them to obfuscate data and prevent recovery
+- Scripts "shred" files (fill with random bytes) before deleting, to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
 
 ## INSTALLATION
