@@ -1,11 +1,8 @@
 #! /bin/bash
 stty -echo
 clear
-sudo apt update
-echo
 echo "Checking for prerequisite packages..."
 echo
-
 if dpkg -l gpg >/dev/null ; then 
     echo GPG is already installed.
 else
@@ -29,8 +26,12 @@ if dpkg -l lolcat >/dev/null ; then
 else
     sudo apt install lolcat
 fi
-
 echo
-/bin/bash -c "./scripts/exit.sh"
+echo -e "\e[1;37mPREREQUISITES READY \e[0m"
+paplay misc/beep.ogg
+read -p 'Press enter to start launcher...' finish
+clear
+cd ~/gpg-hep
+/bin/bash -c "./scripts/launcher.sh"
 stty echo
 exit 0

@@ -4,7 +4,6 @@ clear
 /bin/bash -c "./scripts/logo.sh | lolcat"
 echo -e "\e[1;37mGPG-HEP LAUNCHER v1-lc \e[0m"
 echo
-echo "P - Prerequisites"
 echo "K - Key Generation"
 echo "TE or TD - Text Encrypt/Decrypt"
 echo "ME or MD - Media Encrypt/Decrypt"
@@ -35,7 +34,7 @@ else
     paplay misc/beep.ogg
     read -p 'Press enter to clear terminal...' finish
     clear
-    /bin/bash -c "./gpg-hep.sh"
+    /bin/bash -c "./scripts/launcher.sh"
     exit 0
     else
         if [[ $input = "f" ]] || [[ $input = "F" ]] ; then
@@ -45,7 +44,7 @@ else
         paplay misc/beep.ogg
         read -p 'Press enter to clear terminal...' finish
         clear
-        /bin/bash -c "./gpg-hep.sh"
+        /bin/bash -c "./scripts/launcher.sh"
         exit 0
         else
             if [[ $input = "sm" ]] || [[ $input = "SM" ]] || [[ $input = "sM" ]] || [[ $input = "Sm" ]] || [[ $input = "ms" ]] || [[ $input = "MS" ]] || [[ $input = "mS" ]] || [[ $input = "Ms" ]] ; then
@@ -113,5 +112,5 @@ if [[ $failed = "true" ]] ; then
     paplay misc/error.ogg
     read -p 'Press enter to restart...' finish
     clear
-    /bin/bash -c "./gpg-hep.sh"
+    /bin/bash -c "./scripts/launcher.sh"
 fi
