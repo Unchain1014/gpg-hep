@@ -1,7 +1,7 @@
 #! /bin/bash
 stty -echo
 clear
-/bin/bash -c "./scripts/logo.sh | lolcat"
+/bin/bash -c "./scripts/logo.sh"
 echo -e "\e[1;37mGPG-HEP LAUNCHER v1-lc \e[0m"
 echo
 echo "K - Key Generation"
@@ -17,69 +17,48 @@ stty -echo
 echo
 
 # Switch on option
-if [[ $input = "e" ]] || [[ $input = "E" ]] || [[ $input = "ex" ]] || [[ $input = "EX" ]] || [[ $input = "eX" ]] || [[ $input = "Ex" ]] || [[ $input = "et" ]] || [[ $input = "ET" ]] || [[ $input = "eT" ]] || [[ $input = "Et" ]] || [[ $input = "exit" ]] || [[ $input = "EXIT" ]] ; then
+if [[ $input = "e" ]] || [[ $input = "E" ]] || [[ $input = "ex" ]] || [[ $input = "EX" ]] || [[ $input = "eX" ]] || [[ $input = "Ex" ]] || [[ $input = "exit" ]] || [[ $input = "EXIT" ]] ; then
 clear
 stty echo
 exit 0
 else
-    if [[ $input = "vh" ]] || [[ $input = "VH" ]] || [[ $input = "vH" ]] || [[ $input = "Vh" ]] || [[ $input = "hv" ]] || [[ $input = "HV" ]] || [[ $input = "hV" ]] || [[ $input = "Hv" ]] || [[ $input = "H" ]] || [[ $input = "h" ]] ; then
+    if [[ $input = "f" ]] || [[ $input = "F" ]] ; then
     stty -echo
-    echo -e "\e[37mDisplaying help file: \e[0m"
-    echo
-    cat "misc/help"
-    echo
-    echo -e "\e[1;37mEND OF HELP FILE \e[0m"
+    open /home/$USER/gpg-hep/files
+    echo -e "\e[37mDirectory opened in new window. \e[0m"
     read -p 'Press enter to clear terminal...' finish
     clear
     /bin/bash -c "./scripts/launcher.sh"
     exit 0
     else
-        if [[ $input = "f" ]] || [[ $input = "F" ]] ; then
-        stty -echo
-        open /home/$USER/gpg-hep/files
-        echo -e "\e[37mDirectory opened in new window. \e[0m"
-        read -p 'Press enter to clear terminal...' finish
-        clear
-        /bin/bash -c "./scripts/launcher.sh"
-        exit 0
+        if [[ $input = "sm" ]] || [[ $input = "SM" ]] || [[ $input = "sM" ]] || [[ $input = "Sm" ]] || [[ $input = "ms" ]] || [[ $input = "MS" ]] || [[ $input = "mS" ]] || [[ $input = "Ms" ]] ; then
+        option="strip"
         else
-            if [[ $input = "sm" ]] || [[ $input = "SM" ]] || [[ $input = "sM" ]] || [[ $input = "Sm" ]] || [[ $input = "ms" ]] || [[ $input = "MS" ]] || [[ $input = "mS" ]] || [[ $input = "Ms" ]] ; then
-            option="strip"
+            if [[ $input = "kg" ]] || [[ $input = "KG" ]] || [[ $input = "kG" ]] || [[ $input = "Kg" ]] || [[ $input = "k" ]] || [[ $input = "K" ]] ; then
+            option="kgen"
             else
-                if [[ $input = "ip" ]] || [[ $input = "IP" ]] || [[ $input = "iP" ]] || [[ $input = "Ip" ]] || [[ $input = "pi" ]] || [[ $input = "PI" ]] || [[ $input = "pI" ]] || [[ $input = "Pi" ]] || [[ $input = "i" ]] || [[ $input = "I" ]] || [[ $input = "p" ]] || [[ $input = "P" ]] ; then
-                option="prereq"
+                if [[ $input = "te" ]] || [[ $input = "TE" ]] || [[ $input = "tE" ]] || [[ $input = "Te" ]] || [[ $input = "et" ]] || [[ $input = "ET" ]] || [[ $input = "eT" ]] || [[ $input = "Et" ]] ; then
+                option="te"
                 else
-                    if [[ $input = "kg" ]] || [[ $input = "KG" ]] || [[ $input = "kG" ]] || [[ $input = "Kg" ]] || [[ $input = "gk" ]] || [[ $input = "GK" ]] || [[ $input = "gK" ]] || [[ $input = "Gk" ]] || [[ $input = "k" ]] || [[ $input = "K" ]] || [[ $input = "g" ]] || [[ $input = "G" ]] ; then
-                    option="kgen"
+                    if [[ $input = "td" ]] || [[ $input = "TD" ]] || [[ $input = "tD" ]] || [[ $input = "Td" ]] || [[ $input = "dt" ]] || [[ $input = "DT" ]] || [[ $input = "dT" ]] || [[ $input = "Dt" ]] ; then
+                    option="td"
                     else
-                        if [[ $input = "te" ]] || [[ $input = "TE" ]] || [[ $input = "tE" ]] || [[ $input = "Te" ]] || [[ $input = "et" ]] || [[ $input = "ET" ]] || [[ $input = "eT" ]] || [[ $input = "Et" ]] ; then
-                        option="te"
+                        if [[ $input = "me" ]] || [[ $input = "ME" ]] || [[ $input = "mE" ]] || [[ $input = "Me" ]] || [[ $input = "em" ]] || [[ $input = "EM" ]] || [[ $input = "eM" ]] || [[ $input = "Em" ]] ; then
+                        option="me"
                         else
-                            if [[ $input = "td" ]] || [[ $input = "TD" ]] || [[ $input = "tD" ]] || [[ $input = "Td" ]] || [[ $input = "dt" ]] || [[ $input = "DT" ]] || [[ $input = "dT" ]] || [[ $input = "Dt" ]] ; then
-                            option="td"
+                            if [[ $input = "md" ]] || [[ $input = "MD" ]] || [[ $input = "mD" ]] || [[ $input = "Md" ]] || [[ $input = "dm" ]] || [[ $input = "DM" ]] || [[ $input = "dM" ]] || [[ $input = "Dm" ]] ; then
+                            option="md"
                             else
-                                if [[ $input = "me" ]] || [[ $input = "ME" ]] || [[ $input = "mE" ]] || [[ $input = "Me" ]] || [[ $input = "em" ]] || [[ $input = "EM" ]] || [[ $input = "eM" ]] || [[ $input = "Em" ]] ; then
-                                option="me"
-                                else
-                                    if [[ $input = "md" ]] || [[ $input = "MD" ]] || [[ $input = "mD" ]] || [[ $input = "Md" ]] || [[ $input = "dm" ]] || [[ $input = "DM" ]] || [[ $input = "dM" ]] || [[ $input = "Dm" ]] ; then
-                                    option="md"
-                                    else
-                                        if [[ $input = "tt" ]] || [[ $input = "TT" ]] || [[ $input = "tT" ]] || [[ $input = "Tt" ]] || [[ $input = "t" ]] || [[ $input = "T" ]]; then
-                                        option="install-profile"
-                                        else
-                                            option="null"
-                                            failed="true"
-                                            stty -echo
-                                            echo -e "\e[31mOption was not recognized. \e[0m"
-                                            echo -e "\e[31mPlease check letter code again. \e[0m"
-                                            echo
-                                        fi
-                                    fi
-                                fi
+                                option="null"
+                                failed="true"
+                                stty -echo
+                                echo -e "\e[31mOption was not recognized. \e[0m"
+                                echo -e "\e[31mPlease check letter code again. \e[0m"
+                                echo
                             fi
                         fi
                     fi
-               fi
+                fi
             fi
         fi
     fi

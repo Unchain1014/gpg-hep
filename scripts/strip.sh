@@ -1,7 +1,7 @@
 #! /bin/bash
 stty -echo
 clear
-/bin/bash -c "./scripts/logo.sh | lolcat"
+/bin/bash -c "./scripts/logo.sh"
 echo -e "\e[1;37mMETADATA STRIPPING SCRIPT STARTED \e[0m"
 echo "GPG-HEP uses EXIFTOOL to strip metadata."
 echo

@@ -2,7 +2,7 @@
 stty -echo
 encryption="Twofish"
 clear
-/bin/bash -c "./scripts/logo.sh | lolcat"
+/bin/bash -c "./scripts/logo.sh"
 echo -e "\e[1;37mKEY GENERATION SCRIPT STARTED \e[0m"
 echo "GPG-HEP is configured to use $encryption encryption."
 echo
