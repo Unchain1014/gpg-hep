@@ -32,24 +32,35 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - These can be installed manually, or you can type "p" in the launcher to run the automated installer
     > PULSEAUDIO and LOLCAT are not required for full functionality as they are only providing sound and color
     > A future "light" version of GPG-HEP will be available without these dependencies
-
+  - Optionally, you can start preresquisite installation with the following command:
+    ```
+    cd ~/gpg-hep/scripts ; ./prereq.sh
+    ```
 ### 3. Create a shared key file
   - A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
-  - Start creating a key file by typing "k" in the launcher or running the following command:
+  - This key file should be encrypted with a strong shared passphrase
+  - You must coordinate this shared passphrase with the recipient
+  - Start creating a key file by typing "k" in the launcher
+  - Optionally, you can start key generation with the following command:
     ```
     cd ~/gpg-hep/scripts ; ./kgen.sh
     ```
-  - This key file should be encrypted with a strong shared passphrase
-  - You must coordinate this shared passphrase with the recipient
-
 ### 4. Encrypt text
   - Before encrypting text you must have a .gpg key file in the "files" directory
-  - Begin text encryption by typing "te" in the launcher
   - Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
-  - 
-
+  - Begin text encryption by typing "te" in the launcher and following the prompts
+  - Optionally, you can start text encryption with the following command:
+    ```
+    cd ~/gpg-hep/scripts ; ./te.sh
+    ```
 ### 5. Decrypt text
-
+  - Before decrypting be sure to have you .gpg message and .gpg key file in the "files" directory
+  - Be ready to enter the coordinated shared passphrase for the key file, which was established with the sender
+  - Beging text decryption by typing "td" in the launcher and following the prompts
+  - Optionally, you can start text decryption with the following command:
+    ```
+    cd ~/gpg-hep/scripts ; ./td.sh
+    ```
 ### 6. Encrypt a media file
 
 ### 7. Decrypt a media file
