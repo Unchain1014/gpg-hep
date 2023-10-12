@@ -9,7 +9,6 @@ Nothing in this project does anything you can not do on your own. The goal of GP
 - Metadata stripping provided by EXIFTOOL and fully incorporated in media file workflows
 - Scripts "shred" (fill with random bytes) files before removing them to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
-- No personal or identifying data is stored in the files created or edited by these scripts
 
 # INSTALLATION
 - Clone this repository with the following command:
@@ -34,7 +33,7 @@ Nothing in this project does anything you can not do on your own. The goal of GP
     > PULSEAUDIO and LOLCAT are not required for full functionality as they are only providing sound and color
     > A future "light" version of GPG-HEP will be available without these dependencies
 
-### 3. Create a key to share with the recipient of your files
+### 3. Create a shared key file
   - A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
   - Start creating a key file by typing "k" in the launcher or running the following command:
     ```
@@ -43,9 +42,9 @@ Nothing in this project does anything you can not do on your own. The goal of GP
   - This key file should be encrypted with a strong shared passphrase
   - You must coordinate this shared passphrase with the recipient
 
-### 4. Encrypt some text
+### 4. Encrypt text
 
-### 5. Decrypt some text
+### 5. Decrypt text
 
 ### 6. Encrypt a media file
 
