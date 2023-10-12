@@ -32,26 +32,18 @@ cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
 - Begin text encryption by typing "te" in the launcher and following the prompts
    > Before encrypting text you must have a .gpg key file in the "gpg-hep/files" directory
 
-   > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
-
    > Because text editing is limited in most terminals, you may wish to use a text editor to compose your message and then paste it into the terminal with "Control + Shift + V"
 ### Decrypt text
 - Begin text decryption by typing "td" in the launcher and following the prompts
    > Before decrypting be sure to have your .gpg message and .gpg key file in the "gpg-hep/files" directory
-
-   > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### Encrypt a media file
 - Begin media encryption by typing "me" in the launcher and following the prompts
    > Before encrypting media, be sure to have your files and a .gpg key in the "gpg-hep/files" directory
-
-   > Be ready to enter the coordinated shared passphrase for the key file which was established with the recipient
 
    > The media encryption script will ask if you want to strip metadata and do it for you
 ### Decrypt a media file
 - Begin media decryption by typing "md" in the launcher and following the prompts
    > Before decrypting media, be sure to have your .gpg files and a .gpg key in the "gpg-hep/files" directory
-
-   > Be ready to enter the coordinated shared passphrase for the key file which was established with the sender
 ### Strip media file metadata
 - Strip metadata by typing "sm" in the launcher and following the prompts
    > Before stripping metadata from a media file, make sure it is placed in the "gpg-hep/files" directory
