@@ -10,7 +10,7 @@ The goal of GPG-HEP is to bring something that resembles a GUI to already existi
 - Scripts "shred" files (fill with random bytes) before deleting, to obfuscate data and prevent recovery
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
 
-## INSTALLATION
+## LINUX INSTALLATION
 ### Clone this repository with the following command:
 ```
 cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
