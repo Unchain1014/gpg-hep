@@ -19,13 +19,13 @@ cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git
 ### Start the launcher with gpg-hep.sh
 1. Enable text/script file execution in your file manager
    > This step will vary depening on your Linux distribution and file manager
-2. Execute the gpg-hep.sh file in the cloned directory
+2. Execute the gpg-hep.sh file in the cloned directory (double click in most file managers)
    > You will be prompted to install prerequisite packages when starting the launcher (GPG and EXIFTOOL)
 ### Create a shared key file
 - Create a key file by typing "k" in the launcher
    > A key file contains 250 random characters used as the passphrase to encrypt/decrypt files
 
-   > This key file should be encrypted with a strong shared passphrase
+   > This key file will be encrypted with a strong shared passphrase
 
    > You must coordinate this shared passphrase with the recipient
 ### Encrypt text
