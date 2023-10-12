@@ -14,7 +14,6 @@ if [[ ! -f files/$target_filename ]]
 then
  echo
  echo -e "\e[31mTarget file not found. \e[0m"
- paplay misc/error.ogg
  echo
  /bin/bash -c "./scripts/exit-error.sh"
  stty echo
@@ -27,7 +26,7 @@ read -p 'Are you sure you want to strip this file? (y/N) ' strip
 stty -echo
 if [[ $strip = "y" ]] || [[ $strip = "Y" ]] ; then
     echo "Stripping metadata from target file..."
-    exiftool -quiet -all= files/$target_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+    exiftool -quiet -all= files/$target_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
     shred files/"${target_filename}_original"
     echo -e "\e[32mStripped all shredded. \e[0m"
     rm -f files/"${target_filename}_original"

@@ -16,7 +16,6 @@ if [[ ! -f files/$target_filename ]]
 then
  echo
  echo -e "\e[31mTarget file not found. \e[0m"
- paplay misc/error.ogg
  echo
  /bin/bash -c "./scripts/exit-error.sh"
  stty echo
@@ -30,7 +29,7 @@ read key_filename
 stty -echo
 echo
 echo -e "\e[37mEnter shared password for key file: \e[0m"
-gpg -d --quiet --no-symkey-cache files/$key_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+gpg -d --quiet --no-symkey-cache files/$key_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
 echo
 echo -e "\e[37mCopy shared key for the next step (Triple Click, Ctrl + Shift + C). \e[0m"
 echo -e "You will not get another chance to copy the key before being prompted!"
@@ -38,7 +37,7 @@ read -p 'Press enter to continue...' continue
 echo
 echo
 echo -e "\e[37mEnter shared key for decryption: \e[0m"
-gpg --quiet --no-symkey-cache files/$target_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+gpg --quiet --no-symkey-cache files/$target_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
 echo -e "\e[32mFile decrypted successfully. \e[0m"
 echo
 stty echo

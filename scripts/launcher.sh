@@ -8,9 +8,7 @@ echo "K - Key Generation"
 echo "TE or TD - Text Encrypt/Decrypt"
 echo "ME or MD - Media Encrypt/Decrypt"
 echo "SM - Strip Metadata"
-echo "T - Terminal Theme"
 echo "F - Files"
-echo "H - Help"
 echo "E - Exit"
 echo
 stty echo
@@ -31,7 +29,6 @@ else
     cat "misc/help"
     echo
     echo -e "\e[1;37mEND OF HELP FILE \e[0m"
-    paplay misc/beep.ogg
     read -p 'Press enter to clear terminal...' finish
     clear
     /bin/bash -c "./scripts/launcher.sh"
@@ -41,7 +38,6 @@ else
         stty -echo
         open /home/$USER/gpg-hep/files
         echo -e "\e[37mDirectory opened in new window. \e[0m"
-        paplay misc/beep.ogg
         read -p 'Press enter to clear terminal...' finish
         clear
         /bin/bash -c "./scripts/launcher.sh"
@@ -109,7 +105,6 @@ fi
 if [[ $failed = "true" ]] ; then
     stty -echo
     echo -e "\e[1;37mUNABLE TO LAUNCH OPTION \e[0m"
-    paplay misc/error.ogg
     read -p 'Press enter to restart...' finish
     clear
     /bin/bash -c "./scripts/launcher.sh"

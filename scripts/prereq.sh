@@ -28,7 +28,6 @@ else
 fi
 echo
 echo -e "\e[1;37mPREREQUISITES READY \e[0m"
-paplay misc/beep.ogg
 read -p 'Press enter to start launcher...' finish
 clear
 cd ~/gpg-hep

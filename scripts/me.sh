@@ -15,7 +15,6 @@ if [ ! -f files/$target_filename ]
 then
  echo
  echo -e "\e[31mTarget file not found. \e[0m"
- paplay misc/error.ogg
  echo
  /bin/bash -c "./scripts/exit-error.sh"
  stty echo
@@ -26,7 +25,6 @@ if [ -f files/$target_filename.gpg ]
 then
  echo
  echo -e "\e[33mThis will overwrite an existing file! \e[0m"
- paplay misc/warn.ogg
  stty echo
  read -p 'Do you wish to continue? (y/N) ' continue1
  stty -echo
@@ -46,7 +44,7 @@ stty -echo
 if [[ $strip = "y" ]] || [[ $strip = "Y" ]]
 then
  echo "Stripping metadata from target file..."
- exiftool -quiet -all= files/$target_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+ exiftool -quiet -all= files/$target_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
  shred files/"${target_filename}_original"
  rm -f files/"${target_filename}_original"
  echo -e "\e[32mStripped all metadata. \e[0m"
@@ -59,7 +57,7 @@ read key_filename
 stty -echo
 echo
 echo -e "\e[37mEnter shared password for key file: \e[0m"
-gpg -d --quiet --no-symkey-cache files/$key_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+gpg -d --quiet --no-symkey-cache files/$key_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
 echo
 echo -e "\e[37mCopy shared key for the next step (Triple Click, Ctrl + Shift + C). \e[0m"
 echo -e "You will not get another chance to copy the key before being prompted!"
@@ -67,7 +65,7 @@ read -p 'Press enter to continue...' continue2
 echo
 echo
 echo -e "\e[37mEnter shared key for encryption: \e[0m"
-gpg --batch --yes -c --cipher-algo $encryption --quiet --no-symkey-cache files/$target_filename || { paplay misc/error.ogg ; echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
+gpg --batch --yes -c --cipher-algo $encryption --quiet --no-symkey-cache files/$target_filename || { echo ; /bin/bash -c "./scripts/exit-error.sh" ; exit 1 ; }
 echo -e "\e[32mEncrypted file with shared key. \e[0m"
 echo
 stty echo

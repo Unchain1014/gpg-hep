@@ -18,7 +18,6 @@ echo
 echo "GPG-HEP GNOME terminal profile has been installed."
 echo
 echo -e "\e[1;33mRESTART FOR CHANGES TO TAKE EFFECT \e[0m"
-paplay misc/beep.ogg
 read -p 'Press enter to close terminal...' finish
 clear
 stty echo
