@@ -1,7 +1,7 @@
 # ABOUT GPG-HEP
-Terminal based shell script launcher for GPG encrpytion/decryption of text and image/video files. Includes metadatastripping with EXIFTOOL.
+Terminal based shell script launcher for GPG encrpytion/decryption of text and image/video files. Includes metadata stripping with EXIFTOOL.
 
-The goal of GPG-HEP is to bring something that resembles a GUI to already existing systems in order to create a streamlined workflow. GPG-HEP was created with the intention of bringing powerful privacy and security tools into the hands of the average person. Because of this choice, files and folders are named discreetly and the repository will remain as lightweight as possible. This is ideally deployable in volatile situations where privacy and security are necessary.
+The goal of GPG-HEP is to bring something that resembles a GUI to already existing systems in order to create a streamlined workflow. GPG-HEP was created with the intention of bringing powerful privacy and security tools into the hands of the average person. Files and folders are named discreetly and the repository will remain as lightweight as possible. This is ideally deployable in volatile situations where privacy and security are of grave concern.
 
 - Uses a shared master key file system for double symmetric encryption
 - GPG tools for encrypting/decrypting with supported algorithms; IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
