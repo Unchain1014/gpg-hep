@@ -11,12 +11,12 @@ The goal of GPG-HEP is to bring something that resembles a GUI to already existi
 - Extensive error checking to prevent accidental overwrites, deletion, or data leaking
 
 # LINUX INSTALLATION
-## Clone this repository with the following command:
+### Clone this repository with the following command:
 ```
 cd ~ ; git clone https://github.com/Unchain6787/gpg-hep.git ; cd ~/gpg-hep
 ```
-# QUICK GUIDE:
-## Launching
+# QUICK GUIDE
+## Launching GPG-HEP
 1. Enable text/script file execution in your file manager.
    > This step will vary depening on your Linux distribution and file manager.
 2. Execute the gpg-hep.sh file in the cloned directory (double click in most file managers).
